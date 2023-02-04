@@ -1,0 +1,110 @@
+/*   VARIABLES */
+
+:root {
+  --buttonColor: #1b1634;
+  --buttonColorHover: #882a25;
+  --carouselBg: #1b1634;
+  --textColor: white;
+}
+
+/* Style for Home*/
+.Home {
+  color: var(--textColor);
+}
+
+.titleHome {
+  text-align: center;
+  margin-top: 5em;
+  display: flex;
+  justify-content: center;
+}
+
+.titleHome h1 {
+  font-size: 4em;
+}
+
+.titleHome h2 {
+  font-size: 3em;
+}
+
+.linkBox {
+  margin-top: 5em;
+  display: flex;
+  justify-content: center;
+}
+
+.linkBox h3 {
+  position: relative;
+  top: 1.2em;
+  right: 0.5em;
+}
+
+.btnBoxHome button {
+  margin: 1em 1em 0.3em 0;
+
+  font-size: 1.5em;
+
+  background-color: var(--buttonColor);
+
+  color: var(--textColor);
+}
+
+.btnBoxHome button:hover {
+  background-color: var(--buttonColorHover);
+  color: var(--textColor);
+}
+
+@media screen and (max-width: 450px) {
+  .btnBoxHome {
+    position: relative;
+    top: 4em;
+  }
+
+  .linkBox h3 {
+    position: relative;
+    top: 1.5em;
+    right: 0.6em;
+  }
+}
+/* Style for Timer*/
+
+.btnBox {
+  position: relative;
+  left: 0.5em;
+}
+
+.btnBox button {
+  margin: 1em 1em 0.3em 0;
+
+  font-size: 1.5em;
+
+  background-color: var(--buttonColor);
+
+  color: var(--textColor);
+}
+
+.btnBox button:hover {
+  background-color: var(--buttonColorHover);
+  color: var(--textColor);
+}
+
+/* Style for TimerTwo*/
+
+.btnBoxWind {
+  position: relative;
+  left: 0.5em;
+}
+
+.btnBoxWind button {
+  margin: 1em 1em 0.3em 0;
+
+  font-size: 1.5em;
+
+  background-color: var(--buttonColor);
+
+  color: var(--textColor);
+}
+
+.btnBoxWind button:hover {
+  background-color: var(--buttonColorHover);
+}

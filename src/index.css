@@ -1,13 +1,75 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@1&display=swap");
+/*   VARIABLES */
+:root {
+  --font: "Nunito Sans", sans-serif;
+  --backgroundImage: url(./img/monastero.jpg);
+  --backgroundColorAudio: #201b30;
+  --textColor: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+
+body {
+  background-image: var(--backgroundImage);
+}
+
+header {
+  text-align: center;
+  color: var(--textColor);
+  background-color: rgba(32, 27, 48, 70%);
+  border-radius: 30px;
+  padding: 1em;
+}
+
+.timerBox {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  position: relative;
+  top: 4em;
+
+  color: var(--textColor);
+}
+
+.time {
+  margin-top: 2em;
+  position: relative;
+  right: 0.2em;
+}
+
+.timerBox h2 {
+  font-size: 3em;
+}
+
+.audio {
+  padding: 0.4em 0.2em;
+  margin-top: 2em;
+  font-size: 1.2em;
+
+  border-radius: 35px;
+  background-color: var(--backgroundColorAudio);
+  color: var(--textColor);
+}
+
+.carouselBox {
+  background-color: var(--carouselBg);
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    font-size: 10px;
+  }
 }
