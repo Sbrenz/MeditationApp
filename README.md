@@ -5,7 +5,7 @@ The buttons brings you in the heart of the application,
 the page is identical in each of one but there has a different song,
 in this page you can set, start and stop the timer.
 
-HERE YOU CAN TEST
+HERE YOU CAN TEST THE APP
 https://meditationappbydaniel.netlify.app/
 
 
