@@ -1,3 +1,11 @@
+My first React project, 
+Is a meditation app, it's functionalitty is very simple,
+you find a home page with a header and two buttons.
+The buttons brings you in the heart of the application, 
+the page is identical in each of one but there has a different song,
+in this page you can set, start and stop the timer.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
