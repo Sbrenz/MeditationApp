@@ -14,13 +14,13 @@ const Home = () => {
           </div>
           <div className="btnBoxHome linkBox">
             <div>
-              <Link to="/Timer">
+              <Link to="/Timer/rain">
                 <button className="btn">Rain</button>
               </Link>
             </div>
             <h3>Or</h3>
             <div>
-              <Link to="/TimerTwo">
+              <Link to="/Timer/wind">
                 <button className="btn">Wind</button>
               </Link>
             </div>

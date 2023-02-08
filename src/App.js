@@ -2,19 +2,17 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // COMPONENTS
-import Timer from "./Components/Timer";
-import TimerTwo from "./Components/TimerTwo";
-import Home from "./Components/Home";
+import Timer from "./components/Timer";
+import Home from "./components/Home";
 // STYLE
-import "./Components/style/style.css";
+import "./components/style/style.css";
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Timer" element={<Timer />} />
-        <Route path="/TimerTwo" element={<TimerTwo />} />
+        <Route path="/Timer/:sound" element={<Timer />} />
       </Routes>
     </Router>
   );

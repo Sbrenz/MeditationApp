@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import AudioPlayer from "react-audio-player";
 
 // import Carousel
 import CarouselHome from "./Carousel";
 // import audio
-import Mp3 from "../audio/rain.mp3";
+import RainMp3 from "../audio/rain.mp3";
+import WindMp3 from "../audio/wind.mp3";
 
 const Timer = () => {
   //Handle the logic of the timer
+
+  let { sound } = useParams();
 
   const [time, setTime] = useState(120);
   const [intervalId, setIntervalId] = useState(null);
@@ -74,7 +77,9 @@ const Timer = () => {
       </div>
       <div className="container">
         <div className="audio">
-          {isRunning && time > 0 ? <AudioPlayer src={Mp3} autoPlay /> : null}
+          {isRunning && time > 0 ? (
+            <AudioPlayer src={sound === "rain" ? RainMp3 : WindMp3} autoPlay />
+          ) : null}
           {isRunning ? (
             <p>Now relax and listen to your breath</p>
           ) : (
