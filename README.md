@@ -1,9 +1,41 @@
+# MEDITATION APP
+
 My first React project, 
 Is a meditation app, it's functionalitty is very simple,
 you find a home page with a header and two buttons.
 The buttons brings you in the heart of the application, 
 the page is identical in each of one but there has a different song,
 in this page you can set, start and stop the timer.
+
+***
+
+## What i used for the structure of the app:
+
+1. React-router
+2. React-audio-player
+3. UseState
+4. UseEffect
+
+## For the basic style:
+
+Bootstrap
+
+***
+
+### How it works
+
+The app allows us to set a timer at
+2, 5 and 10 minutes with the appropriate buttons.
+It is possible to start and pause time,
+and to reset just click on the buttons
+for setting the time.
+
+As soon as you set the timer, or leave it at the time preset,
+you can press the play button,
+which will start the timer and the music,
+to stop everything just press on it again.
+
+***
 
 HERE YOU CAN TEST THE APP
 https://meditationappbydaniel.netlify.app/
